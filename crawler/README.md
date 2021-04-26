@@ -36,16 +36,19 @@ You will lose points for memory errors and leaks reported by valgrind on our tes
 Write the first sub-system of the Tiny Search Engine: the *crawler*.
 Your implementation must follow the Requirement and Design Specs, and should follow the Implementation Spec.
 
-**In the `crawler` directory,**
+**In the top directory,**
 
  1. Update the `README.md` file to add your name and GitHub username.
+
+**In the `crawler` directory,**
+
  1. Write a program `crawler.c` according to the Specs.
  1. Write a `Makefile` that will, by default, build the `crawler` executable program.
  1. Add a `make clean` target that removes files produced by Make or your tests.
  1. Add a `make test` target that tests your crawler.
     Read [about testing](#testing-crawler) below.
  1. Save the output of your tests with `make test &> testing.out`.
- 1. Update the `README.md` file to describe any assumptions you made while writing the crawler, any ways in which your implementation differs from the three Specs, or any ways in which you know your implementation fails to work.
+ 1. Add a `README.md` file to describe any assumptions you made while writing the crawler, any ways in which your implementation differs from the three Specs, or any ways in which you know your implementation fails to work.
  1. Write a `.gitignore` file telling Git to ignore any unnecessary files in this directory (anything not already covered by the top-level `.gitignore`).
 
 **In the `common` directory,** assemble code that will eventually be shared by the crawler, indexer, and querier.
@@ -64,9 +67,14 @@ Add/commit all the code and ancillary files required to build and test your solu
 
 *Do not commit any data files produced by the crawler, any binary/object files produced by the compiler, backup files, core dumps, etc.*
 
+If you finish Lab 4 early, we encourage you to begin work on Lab 5 or Lab 6.
+Your Lab 4 submission may contain a partly-completed indexer or querier; the graders will ignore those files, but must be able to test your crawler without compilation or run-time errors.
+
 To submit, read the [Lab submission instructions](https://www.cs.dartmouth.edu/~cs50//Labs/submit.html).
 
 # Hints and tips
+
+There are tips and a Crawler demo in the [lecture notes](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-crawler).
 
 ### libcs50
 
@@ -83,7 +91,7 @@ You may find the `mem` module useful.
 Its use is optional, but it is ready to use as part of library `libcs50.a`.
 
 In our Lab3 we tried to recover gracefully from memory-allocation failures.
-In the TSE application programs, we'll be more lazy: on NULL return from malloc/calloc you can print an error and exit with non-zero exit status.
+In the TSE application programs, we'll be more lazy: on NULL return from malloc/calloc you can print an error to stderr and exit with non-zero exit status.
 (You may find the `mem_assert()` family of functions to be useful here.)
 In such cases, it is ok if valgrind reports your program as having leaks.
 

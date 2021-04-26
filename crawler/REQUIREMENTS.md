@@ -21,7 +21,7 @@ The crawler **shall**:
    * and the first line of the file is the URL,
    * and the second line of the file is the depth,
    * and the rest of the file is the page content (the HTML, unchanged).
-1. exit zero if successful; exit with an error message and non-zero exit status if it encounters an unrecoverable error, including
+1. exit zero if successful; exit with an error message to stderr and non-zero exit status if it encounters an unrecoverable error, including
 	* out of memory
 	* invalid number of command-line arguments
 	* `seedURL` is invalid or not internal
