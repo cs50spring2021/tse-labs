@@ -9,3 +9,4 @@ Watch here for any commits that may represent updates to the assignment or specs
 For details of the assignment and specs, visit each subdirectory:
 
 * [Lab 4 (crawler)](crawler/)
+* [Lab 5 (indexer)](indexer/)
