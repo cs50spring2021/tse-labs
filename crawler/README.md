@@ -74,13 +74,14 @@ To submit, read the [Lab submission instructions](https://www.cs.dartmouth.edu/~
 
 # Hints and tips
 
-There are tips and a Crawler demo in the [lecture notes](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-crawler).
+There are tips and a Crawler demo in the [unit about crawler](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-crawler).
 
 ### libcs50
 
 We provide several modules in the `libcs50` directory, which compiles to a library `libcs50.a` you can link with your crawler.
 *You shall not change any of our code,*  but you may drop in your `set.c`, `counters.c`, `hashtable.c` files from Lab 3.
 The top-level Makefile auto-detects the presence of your `set.c` and will build the library with your implementation... or if it is absent, will simply use a pre-compiled library we provide.
+See the [unit about libraries](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-libraries).
 
 **Pay close attention to the `webpage` module,**
 especially the memory contract implemented by `webpage_new` and `webpage_delete`.
