@@ -105,6 +105,7 @@ Suggestion: just pass a constant string as the item; even `""` will do.
 
 ### Testing Crawler
 
+The Implementation Spec instructs you to write a bash script `testing.sh` to test your crawler, and invoke it from the `make test` rule in the Makefile.
 Sample output from our crawler can be found in `~/cs50-dev/shared/tse/output`;
 keep in mind that our crawler may process URLs in a different order, so your directory may not be identical to ours.
 
