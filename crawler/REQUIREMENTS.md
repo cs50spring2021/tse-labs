@@ -10,7 +10,7 @@ The crawler **shall**:
 
 1. execute from a command line with usage syntax `./crawler seedURL pageDirectory maxDepth`
     * where `seedURL` is an 'internal' directory, to be used as the initial URL,
-    * where `pageDirectory` is the directory in which to write downloaded webpages, and
+    * where `pageDirectory` is the (existing) directory in which to write downloaded webpages, and
     * where `maxDepth` is an integer in range [0..10] indicating the maximum crawl depth.
 1. mark the `pageDirectory` as a 'directory produced by the Crawler' by creating a file named `.crawler` in that directory.
 1. crawl all "internal" pages reachable from `seedURL`, following links to a maximum depth of `maxDepth`; where `maxDepth=0` means that crawler only explores the page at `seedURL`, and `maxDepth=1` means that crawler only explores the page at `seedURL` and those pages to which `seedURL` links, and so forth inductively.
