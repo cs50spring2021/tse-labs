@@ -39,15 +39,15 @@ Given arguments from the command line, extract them into the function parameters
 Do the real work of crawling from `seedURL` to `maxDepth` and saving pages in `pageDirectory`.
 Pseudocode:
 
-	initialize the hashtable and insert seedURL
-	initialize the bag and insert seedURL
+	initialize the hashtable and add the seedURL
+	initialize the bag and add a webpage representing the seedURL at depth 0
 	while bag is not empty
 		pull a webpage from the bag
-		fetch the HTML for that page
+		fetch the HTML for that webpage
 		if fetch was successful,
-			save the page to pageDirectory
-			if the page is not at maxDepth,
-				page_scan that page
+			save the webpage to pageDirectory
+			if the webpage is not at maxDepth,
+				pageScan that HTML
 		delete that webpage
 	delete the hashtable
 	delete the bag

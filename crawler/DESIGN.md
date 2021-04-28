@@ -90,7 +90,7 @@ The maxDepth parameter indirectly determines the number of pages that the crawle
 
 Helper modules provide all the data structures we need:
 
-- *bag* of page (URL, depth) structures
+- *bag* of webpage (URL, depth) structures
 - *hashtable* of URLs
 - *webpage* contains all the data read for a given webpage, plus the URL and the depth at which it was fetched
 
