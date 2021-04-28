@@ -5,7 +5,7 @@ In this lab you'll continue the Tiny Search Engine (TSE) by coding the *Indexer*
 
 You will also write the Implementation Spec.
 
-Grading will focus on [CS50 coding style](https://www.cs.dartmouth.edu/~cs50//Labs/CodingStyle.html) - including consistent formatting, selection of identifier names, and use of meaningful comments - in addition to correctness, testing, and documentation.
+Grading will focus on [CS50 coding style](https://www.cs.dartmouth.edu/~cs50/Labs/CodingStyle.html) - including consistent formatting, selection of identifier names, and use of meaningful comments - in addition to correctness, testing, and documentation.
 
 ***Your C code must compile without producing any compiler warnings.***  You will lose points if the compiler produces warnings when using our CS50-standard compiler flags.
 
@@ -22,13 +22,13 @@ You will lose points for memory errors and leaks reported by valgrind on our tes
 ## Preparation
 
 1. Start with the same repository you used for Lab 4.
-*Before you begin*, make sure you submitted Lab 4 correctly, [as instructed](https://www.cs.dartmouth.edu/~cs50//Labs/submit.html).
+*Before you begin*, make sure you submitted Lab 4 correctly, [as instructed](https://www.cs.dartmouth.edu/~cs50/Labs/submit.html).
 1. Check to ensure your local repo is clean with `make clean` and everything looks correct according to `git status`.
     **Do not proceed** if you have uncommitted changes or unpushed commits.
     Seek help if you need to sort out your repo or GitHub.
 1. Ensure you are again working on the `main` branch.
 1. Create a new subdirectory `indexer`.
-1. Review Section 4 in *[Searching the Web](https://www.cs.dartmouth.edu/~cs50//Lectures/media/searchingtheweb.pdf)*, the paper about search engines.
+1. Review Section 4 in *[Searching the Web](https://www.cs.dartmouth.edu/~cs50/Lectures/media/searchingtheweb.pdf)*, the paper about search engines.
 
 ## Assignment
 
@@ -67,11 +67,11 @@ Add/commit all the code and ancillary files required to build and test your solu
 If you finish Lab 5 early, we encourage you to begin work on Lab 6.
 Your Lab 5 submission may contain a partly-completed querier; the graders will ignore its files, but must be able to test your indexer without compilation or run-time errors.
 
-To submit, read the [Lab submission instructions](https://www.cs.dartmouth.edu/~cs50//Labs/submit.html).
+To submit, read the [Lab submission instructions](https://www.cs.dartmouth.edu/~cs50/Labs/submit.html).
 
 ## Hints and tips
 
-Many of the [Lab4 hints](../crawler/README.md) are still relevant, and there are more tips in the [lecture notes](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-indexer).
+Many of the [Lab4 hints](../crawler/README.md) are still relevant, and there are more tips in the [lecture notes](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-indexer).
 
 ### Testing
 

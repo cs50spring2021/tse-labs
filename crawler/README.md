@@ -4,7 +4,7 @@ In this lab you'll begin the Tiny Search Engine (TSE) by coding the *Crawler* ac
 * [Design Spec](DESIGN.md)
 * [Implementation Spec](IMPLEMENTATION.md)
 
-Grading will focus on [CS50 coding style](https://www.cs.dartmouth.edu/~cs50//Labs/CodingStyle.html) - including consistent formatting, selection of identifier names, and use of meaningful comments - in addition to correctness, testing, and documentation.
+Grading will focus on [CS50 coding style](https://www.cs.dartmouth.edu/~cs50/Labs/CodingStyle.html) - including consistent formatting, selection of identifier names, and use of meaningful comments - in addition to correctness, testing, and documentation.
 
 ***Your C code must compile without producing any compiler warnings.***  You will lose points if the compiler produces warnings when using our CS50-standard compiler flags.
 
@@ -70,18 +70,18 @@ Add/commit all the code and ancillary files required to build and test your solu
 If you finish Lab 4 early, we encourage you to begin work on Lab 5 or Lab 6.
 Your Lab 4 submission may contain a partly-completed indexer or querier; the graders will ignore those files, but must be able to test your crawler without compilation or run-time errors.
 
-To submit, read the [Lab submission instructions](https://www.cs.dartmouth.edu/~cs50//Labs/submit.html).
+To submit, read the [Lab submission instructions](https://www.cs.dartmouth.edu/~cs50/Labs/submit.html).
 
 # Hints and tips
 
-There are tips and a Crawler demo in the [unit about crawler](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-crawler).
+There are tips and a Crawler demo in the [unit about crawler](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-crawler).
 
 ### libcs50
 
 We provide several modules in the `libcs50` directory, which compiles to a library `libcs50.a` you can link with your crawler.
 *You shall not change any of our code,*  but you may drop in your `set.c`, `counters.c`, `hashtable.c` files from Lab 3.
 The top-level Makefile auto-detects the presence of your `set.c` and will build the library with your implementation... or if it is absent, will simply use a pre-compiled library we provide.
-See the [unit about libraries](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-libraries).
+See the [unit about libraries](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-libraries).
 
 **Pay close attention to the `webpage` module,**
 especially the memory contract implemented by `webpage_new` and `webpage_delete`.
@@ -111,4 +111,4 @@ keep in mind that our crawler may process URLs in a different order, so your dir
 
 ### Use valgrind and gdb
 
-We've provided information about [gdb](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-gdb) and [valgrind](https://www.cs.dartmouth.edu/~cs50//Lectures/#unit-valgrind); make use of them.
+We've provided information about [gdb](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-gdb) and [valgrind](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-valgrind); make use of them.
