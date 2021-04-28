@@ -32,7 +32,7 @@ $ ./crawler http://cs50tse.cs.dartmouth.edu/tse/letters/index.html ../data/lette
 *Input:* there are no file inputs; there are command-line parameters described above.
 
 *Output:* Per the requirements spec, Crawler will save each explored webpage to a file, one webpage per file, using a unique `documentID` as the file name.  For example,
-the top file of the website would have `documentID` 0, the next webpage access from a link on that top page would be `documentID` 1, and so on.
+the top file of the website would have `documentID` 1, the next webpage access from a link on that top page would be `documentID` 2, and so on.
 Within each of these files, crawler writes:
 
  * the full page URL on the first line,
