@@ -74,14 +74,14 @@ To submit, read the [Lab submission instructions](https://www.cs.dartmouth.edu/~
 
 # Hints and tips
 
-There are tips and a Crawler demo in the [unit about crawler](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-crawler).
+There are tips and a Crawler demo in the [unit about crawler](https://www.cs.dartmouth.edu/~cs50/Lectures/units/crawler.html).
 
 ### libcs50
 
 We provide several modules in the `libcs50` directory, which compiles to a library `libcs50.a` you can link with your crawler.
 *You shall not change any of our code,*  but you may drop in your `set.c`, `counters.c`, `hashtable.c` files from Lab 3.
 The top-level Makefile auto-detects the presence of your `set.c` and will build the library with your implementation... or if it is absent, will simply use a pre-compiled library we provide.
-See the [unit about libraries](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-libraries).
+See the [unit about libraries](https://www.cs.dartmouth.edu/~cs50/Lectures/units/libraries.html).
 
 **Pay close attention to the `webpage` module,**
 especially the memory contract implemented by `webpage_new` and `webpage_delete`.
@@ -111,4 +111,4 @@ keep in mind that our crawler may process URLs in a different order, so your dir
 
 ### Use valgrind and gdb
 
-We've provided information about [gdb](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-gdb) and [valgrind](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-valgrind); make use of them.
+We've provided information about [gdb](https://www.cs.dartmouth.edu/~cs50/Lectures/units/gdb.html) and [valgrind](https://www.cs.dartmouth.edu/~cs50/Lectures/units/valgrind.html); make use of them.

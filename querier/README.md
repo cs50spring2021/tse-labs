@@ -78,7 +78,7 @@ Partial credit is available, of course, per the judgement of the grader, but abo
 
 ## Hints and tips
 
-There are some examples and design tips in the [unit about querier](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-querier), and following units.
+There are some examples and design tips in the [unit about querier](https://www.cs.dartmouth.edu/~cs50/Lectures/units/querier.html), and following units.
 
 Many of the [Lab4 hints](../crawler/README.md) and
 [Lab5 hints](../indexer/README.md) are still relevant.
@@ -98,7 +98,7 @@ Just think about how the hash-table size (in slots) might relate to the number o
 
 We strongly recommend that your code read the entire query (a line of input) into a single string, then *tokenize* the query string.
 That is, you should write a function that takes a string and builds an array of words; it should use white space (space or tab) as the delimiter; each word can be normalized (lower-cased) and checked for illegal characters before being added to the array.
-See a [unit](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-querier-chop) for one approach.
+See a [unit](https://www.cs.dartmouth.edu/~cs50/Lectures/units/querier-chop.html) for one approach.
 
 Now that all the character-by-character parsing is behind you, and you have an array of words, you can step through the array to print a *clean query*, that is, with no extraneous spaces and all letters in lower case.
 
@@ -111,14 +111,14 @@ If valid, proceed to next step; otherwise print a suitable error message.
 	 * One function to return set of documents that satisfy an `andsequence`, looping over words in the `andsequence`; accumulate an answer (like a running product) as you go.
 	 * Another function to return set of documents that satisfy a `query`, looping over calls to the above function for each `andsequence`; accumulate an answer (like a running total) as you go.
 
-Read the [unit about parsing expressions](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-query-expressions) for more hints about how this might work.
+Read the [unit about parsing expressions](https://www.cs.dartmouth.edu/~cs50/Lectures/units/querier-expressions.html) for more hints about how this might work.
 
 
 ### Combining results
 
 Suppose you have one `counters` object representing the set of documents in which a given word appears, and another `counters` object representing the set of documents in which another word appears; each counter set is really a set of (docID, count) pairs.
 How do you combine them?
-Recall [unit about iterators](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-iterators).
+Recall [unit about iterators](https://www.cs.dartmouth.edu/~cs50/Lectures/units/iterators.html).
 
 If you are processing `wordA AND wordB`, the set of documents that match *both* words is the *intersection* of the two sets, and the score for each document (per the specs) is the *minimum* of the count for each document.
 So you need a way to intersect two `counters`; we recommend iterating over one set and, for each item, checking whether that document exists in the other set; update the first set according to what you find.
@@ -142,7 +142,7 @@ Use `counters_iterate` twice - once to count the number of items in the set so y
 If your `itemfunc` uses an insertion-sort approach to drop the new item into the array so the array is sorted in decreasing-score order, you end the iteration with a nicely sorted array of structs.
 Then you can simply loop over the array to print out the list of documents.
 
-Recall [unit about iterators](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-iterators).
+Recall [unit about iterators](https://www.cs.dartmouth.edu/~cs50/Lectures/units/iterators.html).
 
 ### ctype
 
@@ -160,7 +160,7 @@ You can test it interactively, but to do thorough and repeated testing you can w
 You might write a short bash script to run the querier through several such test files.
 That script might even compare the output to known-good output, for regression testing.
 
-Read the [unit about fuzz testing](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-querier-testing);
+Read the [unit about fuzz testing](https://www.cs.dartmouth.edu/~cs50/Lectures/units/querier-testing.html);
 you are welcome to copy into your repo our `~/cs50-dev/shared/tse/fuzzquery.c`.
 If it is used in your testing script, you should commit/push it to your repo.
 

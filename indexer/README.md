@@ -28,7 +28,7 @@ You will lose points for memory errors and leaks reported by valgrind on our tes
     Seek help if you need to sort out your repo or GitHub.
 1. Ensure you are again working on the `main` branch **and** that the `main` branch is up to date if you made any changes on `submit4` after branching off `main`.
 1. Create a new subdirectory `indexer`.
-1. Review Section 4 in *[Searching the Web](https://www.cs.dartmouth.edu/~cs50/Lectures/media/searchingtheweb.pdf)*, the paper about search engines.
+1. Review Section 4 in *[Searching the Web](https://www.cs.dartmouth.edu/~cs50/Lectures/units/media/searchingtheweb.pdf)*, the paper about search engines.
 
 ## Assignment
 
@@ -71,7 +71,7 @@ To submit, read the [Lab submission instructions](https://www.cs.dartmouth.edu/~
 
 ## Hints and tips
 
-Many of the [Lab4 hints](../crawler/README.md) are still relevant, and there are more tips in the [lecture notes](https://www.cs.dartmouth.edu/~cs50/Lectures/#unit-indexer).
+Many of the [Lab4 hints](../crawler/README.md) are still relevant, and there are more tips in the [lecture notes](https://www.cs.dartmouth.edu/~cs50/Lectures/units/indexer.html).
 
 ### Testing
 

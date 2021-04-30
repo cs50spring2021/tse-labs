@@ -2,7 +2,7 @@
 ## Design Spec
 
 In this document we reference the [Requirements Specification](REQUIREMENTS.md) and focus on the implementation-independent design decisions.
-The Lecture unit noted that an [design spec](https://www.cs.dartmouth.edu/~cs50/Lectures/#design-spec) may include many topics; not all are relevant to the TSE or the Crawler.
+The Lecture unit noted that an [design spec](https://www.cs.dartmouth.edu/~cs50/Lectures/units/design.html#design-spec) may include many topics; not all are relevant to the TSE or the Crawler.
 Here we focus on the core subset:
 
 - User interface
