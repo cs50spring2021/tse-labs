@@ -109,6 +109,9 @@ The Implementation Spec instructs you to write a bash script `testing.sh` to tes
 Sample output from our crawler can be found in `~/cs50-dev/shared/tse/output`;
 keep in mind that our crawler may process URLs in a different order, so your directory may not be identical to ours.
 
+**Note:** the full suite of tests described in the Implementation Spec can take more than an hour to run.
+Although we encourage you to test your crawler using a variety of tests, your `testing.out` may be smaller, e.g., (`letters` at depths 0,10, `toscrape` at depths 0,1, `wikipedia` at depths 0,1).
+
 ### Use valgrind and gdb
 
 We've provided information about [gdb](https://www.cs.dartmouth.edu/~cs50/Lectures/units/gdb.html) and [valgrind](https://www.cs.dartmouth.edu/~cs50/Lectures/units/valgrind.html); make use of them.

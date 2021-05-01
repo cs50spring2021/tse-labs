@@ -149,7 +149,7 @@ For routine regression tests, we crawl the `letters` site at moderate depths; sa
 
 We write a script `testing.sh` that invokes the crawler several times, with a variety of command-line arguments.
 First, a sequence of invocations with erroneous arguments, testing each of the possible mistakes that can be made.
-Second, a run with valgrind over a moderate-sized website.
+Second, a run with valgrind over a moderate-sized test case (such as `toscrape` at depth 1).
 Third, runs over all three CS50 websites (`letters` at depths 0,1,2,10, `toscrape` at depths 0,1,2,3, `wikipedia` at depths 0,1,2).
 Run that script with `bash -v testing.sh` so the output of crawler is intermixed with the commands used to invoke the crawler.
 Verify correct behavior by studying the output, and by sampling the files created in the respective pageDirectories.
