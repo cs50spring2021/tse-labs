@@ -145,6 +145,8 @@ The pagedir unit is tiny; it could be tested using a small C 'driver' to invoke 
 The crawler can take a long time to run on some sites when `maxDepth` is more than 2.
 For routine regression tests, we crawl the `letters` site at moderate depths; save the pageDirectory from one working run to compare (with `diff -r`) against future runs.
 
+> For Lab 4, you are not required to script regression tests, though you may find the technique useful for your own testing/debugging process.
+
 ### Integration/system testing
 
 We write a script `testing.sh` that invokes the crawler several times, with a variety of command-line arguments.
@@ -153,3 +155,6 @@ Second, a run with valgrind over a moderate-sized test case (such as `toscrape` 
 Third, runs over all three CS50 websites (`letters` at depths 0,1,2,10, `toscrape` at depths 0,1,2,3, `wikipedia` at depths 0,1,2).
 Run that script with `bash -v testing.sh` so the output of crawler is intermixed with the commands used to invoke the crawler.
 Verify correct behavior by studying the output, and by sampling the files created in the respective pageDirectories.
+
+> For Lab 4, as noted in the assignment, you may submit a smaller test run.
+> Furthermore, we recommend turning off detailed logging output for these tests, as they may `testing.out` rather large!
