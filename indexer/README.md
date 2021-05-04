@@ -80,6 +80,16 @@ You do not need a working crawler to write or test your indexer.
 Try your indexer on our crawler's output, which we provide in `~/cs50-dev/shared/tse/output`.
 Our indexer's output is in that same directory.
 
+It can be tricky to compare two index files for equivalence - because the lines of an index file can be in any order, and the docIDs within a line can be in any order - so a simple run of `diff` won't always be sufficient.
+Try using our `indexcmp` program; you can run it directly from the shared copy we installed:
+
+```bash
+$ ~/cs50-dev/shared/tse/indexcmp
+usage: ~/cs50-dev/shared/tse/indexcmp indexFilenameA indexFilenameB
+```
+
+It takes two arguments, each a pathname to an index file; it will print out any apparent differences.
+
 ### Hashtable
 
 "How big should the hashtable be?"
