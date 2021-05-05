@@ -100,6 +100,8 @@ We strongly recommend that your code read the entire query (a line of input) int
 That is, you should write a function that takes a string and builds an array of words; it should use white space (space or tab) as the delimiter; each word can be normalized (lower-cased) and checked for illegal characters before being added to the array.
 See a [unit](https://www.cs.dartmouth.edu/~cs50/Lectures/units/querier-chop.html) for one approach.
 
+> Note: from painful experience, we specifically recommend you avoid `strtok` and related functions.
+
 Now that all the character-by-character parsing is behind you, and you have an array of words, you can step through the array to print a *clean query*, that is, with no extraneous spaces and all letters in lower case.
 
 You can then step through the array according to the structure defined in the BNF.
