@@ -133,7 +133,6 @@ planet earth and
 planet earth and or science
 planet earth and and science
 planet earth or and science
-Tipping Point for Planet Earth
 Warning!
 (The Lunar Chronicles #4.5)
 ```
@@ -165,10 +164,6 @@ Query: planet earth and and science
 Error: 'and' and 'and' cannot be adjacent
 Query: planet earth or and science 
 Error: 'or' and 'and' cannot be adjacent
-Query: tipping point for planet earth 
-Matches 1 documents (ranked):
-score   8 doc 321: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/tipping-point-for-planet-earth-how-close-are-we-to-the-edge_643/index.html
------------------------------------------------
 Error: bad character '!' in query.
 Error: bad character '(' in query.
 ```
