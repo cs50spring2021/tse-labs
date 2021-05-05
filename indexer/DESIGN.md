@@ -46,13 +46,16 @@ The indexer will run as follows:
 
     parse the command line, validate parameters, initialize other modules
     call indexBuild, with pageDirectory
-      create a new 'index' object
-      loop over document ID numbers, counting from 1
-        load a webpage from the document file 'pageDirectory/id'
-        if successful, 
-          pass the webpage and docID to indexPage
 
-where *indexPage* 
+where *indexBuild:*
+
+      creates a new 'index' object
+      loops over document ID numbers, counting from 1
+        loads a webpage from the document file 'pageDirectory/id'
+        if successful, 
+          passes the webpage and docID to indexPage
+
+where *indexPage:*
 
      steps through each word of the webpage,
        skips trivial words (less than length 3),
