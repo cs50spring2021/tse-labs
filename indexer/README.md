@@ -60,7 +60,10 @@ Your implementation must follow the [Requirements Spec](REQUIREMENTS.md) and [De
 
 ### Submission
 
-Add/commit all the code and ancillary files required to build and test your solution.
+Add/commit all the code and ancillary files required to build and test your solution; at a minimum your **indexer** directory should include the following files:
+`.gitignore README.md IMPLEMENTATION.md Makefile indexer.c indextest.c testing.sh testing.out`
+and your **common** directory should contain the following files:
+`Makefile index.h index.c pagedir.h pagedir.c word.h word.c`
 
 *Do not commit any data files produced by the crawler or indexer, any binary/object files produced by the compiler, backup files, core dumps, etc.*
 

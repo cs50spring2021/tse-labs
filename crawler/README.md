@@ -63,7 +63,10 @@ For now, that comprises code for initializing the "pageDirectory" and saving web
 
 ## Submission
 
-Add/commit all the code and ancillary files required to build and test your solution.
+Add/commit all the code and ancillary files required to build and test your solution; at a minimum your **crawler** directory should include the following files:
+`.gitignore README.md Makefile crawler.c testing.sh testing.out`
+and your **common** directory should contain the following files:
+`Makefile pagedir.h pagedir.c`
 
 *Do not commit any data files produced by the crawler, any binary/object files produced by the compiler, backup files, core dumps, etc.*
 

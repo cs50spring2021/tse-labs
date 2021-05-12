@@ -54,7 +54,10 @@ Your design and implementation must follow the **Querier Requirements Spec** (ak
 
 ### Submission
 
-Add/commit all the code and ancillary files required to build and test your solution.
+Add/commit all the code and ancillary files required to build and test your solution; at a minimum your **querier** directory should include the following files:
+`.gitignore README.md DESIGN.md IMPLEMENTATION.md Makefile querier.c testing.sh testing.out`
+and your **common** directory should contain the following files:
+`Makefile index.h index.c pagedir.h pagedir.c word.h word.c`
 
 *Do not commit any data files produced by the crawler or indexer, any binary/object files produced by the compiler, backup files, core dumps, etc.*
 
