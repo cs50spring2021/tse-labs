@@ -14,7 +14,7 @@ The querier **shall**:
 
 1. validate it received exactly two command-line arguments and that 
 	* `pageDirectory` is the pathname for a directory produced by the Crawler, and
-	* `indexFilename` is the pathname of a file that can be written;
+	* `indexFilename` is the pathname of a file that can be read;
 
 1. load the index from `indexFilename` into an internal data structure.
 
