@@ -43,6 +43,7 @@ The querier *may assume* that
 * `pageDirectory` has files named 1, 2, 3, ..., without gaps.
 * The content of files in `pageDirectory` follow the format as defined in the specs; thus your code (to read the files) need not have extensive error checking.
 * The content of the file named by `indexFilename` follows our index file format (as defined in Lab 5); thus your code (to recreate an index structure by reading a file) need not have extensive error checking.
+* The provided index file corresponds to the provided `pageDirectory`, that is, was built by indexer from the files in that directory.
 
 ## Queries
 
