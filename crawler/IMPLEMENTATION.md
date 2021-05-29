@@ -157,4 +157,4 @@ Run that script with `bash -v testing.sh` so the output of crawler is intermixed
 Verify correct behavior by studying the output, and by sampling the files created in the respective pageDirectories.
 
 > For Lab 4, as noted in the assignment, you may submit a smaller test run.
-> Furthermore, we recommend turning off detailed logging output for these tests, as they may `testing.out` rather large!
+> Furthermore, we recommend turning off detailed logging output for these tests, as they make `testing.out` rather large!
